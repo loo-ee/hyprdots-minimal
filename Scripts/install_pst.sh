@@ -57,9 +57,6 @@ else
     echo -e "\033[0;33m[WARNING]\033[0m dolphin is not installed..."
 fi
 
-# shell
-"${scrDir}/restore_shl.sh"
-
 # flatpak
 if ! pkg_installed flatpak; then
 
