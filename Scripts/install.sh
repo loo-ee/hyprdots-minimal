@@ -166,7 +166,7 @@ fi
 #---------------------#
 # post-install script #
 #---------------------#
-if [ ${flg_Install} -eq 1 ] && [ ${flg_Restore} -eq 1 ]; then
+# if [ ${flg_Install} -eq 1 ] && [ ${flg_Restore} -eq 1 ]; then
     cat << "EOF"
 
              _      _         _       _ _
@@ -178,12 +178,12 @@ if [ ${flg_Install} -eq 1 ] && [ ${flg_Restore} -eq 1 ]; then
 EOF
 
     "${scrDir}/install_pst.sh"
-fi
+# fi
 
 #------------------------#
 # enable system services #
 #------------------------#
-if [ ${flg_Service} -eq 1 ]; then
+# if [ ${flg_Service} -eq 1 ]; then
     cat << "EOF"
 
                  _
@@ -204,4 +204,4 @@ EOF
         fi
 
     done < "${scrDir}/system_ctl.lst"
-fi
+# fi
